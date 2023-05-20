@@ -1,0 +1,9 @@
+Tests\RegisterTests.class
+utils\dataReaders\PropertiesReader.class
+utils\screenshot\TakeScreenShot.class
+utils\listeners\Listeners.class
+utils\BaseTests.class
+utils\ExtenReport\ExtentReport.class
+utils\dataReaders\ExcelReader.class
+utils\dataReaders\JsonDataReader.class
+Tests\LoginTests.class

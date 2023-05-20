@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression suite" parallel="tests" thread-count="2">
+
+    <listeners>
+        <listener class-name="utils.listeners.Listeners"/>
+    </listeners>>
+
+    <test name="Chrome1 tests">
+        <parameter name="BrowserName" value="chrome"></parameter>
+        <classes>
+                <class name="Tests.LoginTests">
+                    <methods>
+                        <include name="TestValidLoggingIn"/>
+                        <include name="TestInValidLoggingIn"/>
+                    </methods>
+                </class>
+        </classes>
+    </test>
+
+        <test  name="Edge tests">
+            <parameter name="BrowserName" value="Edge"></parameter>
+            <classes>
+            <class name="Tests.RegisterTests">
+                <methods>
+                    <include name="alreadyRegisteredEmail"/>
+                    <include name="enterShortPassword"/>
+                    <include name="enterDataWithoutPolicyAgreement"/>
+                    <include name="testValidRegistration"/>
+                    <include name="testValidRegistration"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
+

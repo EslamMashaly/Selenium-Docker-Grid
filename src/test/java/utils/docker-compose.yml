@@ -1,0 +1,48 @@
+# For docker-compose yml file options: https://docs.docker.com/compose/compose-file/compose-file-v3/
+# For the image configurations: https://hub.docker.com/r/selenium/node-chrome
+
+version: "3.9"
+services:
+
+  selenium-hub:
+    image: selenium/hub:latest
+    ports:
+      - "4442-4444"
+      - "4443:4443"
+      - "4444:4444"
+    environment:
+      GRID_MAX_SESSION: 16
+      GRID_BROWSER_TIMEOUT: 300
+      GRID_TIMEOUT: 300
+
+  chrome:
+    image: selenium/node-chrome:latest
+    shm_size: 2gb
+    depends_on:
+      - selenium-hub
+    environment:
+       SE_EVENT_BUS_HOST: selenium-hub
+       SE_EVENT_BUS_PUBLISH_PORT: 4442
+       SE_EVENT_BUS_SUBSCRIBE_PORT: 4443
+       SE_NODE_MAX_INSTANCES: 4
+       SE_NODE_MAX_SESSIONS: 4
+       GRID_BROWSER_TIMEOUT: 300
+       GRID_TIMEOUT: 300
+
+
+#  edge:
+#     image: selenium/node-edge:latest
+#     shm_size: 2gb
+#     depends_on:
+#       - selenium-hub
+#     environment:
+#       SE_EVENT_BUS_HOST: selenium-hub
+#       SE_EVENT_BUS_PUBLISH_PORT: 4442
+#       SE_EVENT_BUS_SUBSCRIBE_PORT: 4443
+#       SE_NODE_MAX_INSTANCES: 4
+#       SE_NODE_MAX_SESSIONS: 4
+#       GRID_BROWSER_TIMEOUT: 300
+#       GRID_TIMEOUT: 300
+
+
+

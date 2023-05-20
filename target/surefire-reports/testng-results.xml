@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="3" total="6" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-20T02:36:50 EET" name="Regression suite" finished-at="2023-05-20T02:37:18 EET" duration-ms="28546">
+    <groups>
+    </groups>
+    <test started-at="2023-05-20T02:36:50 EET" name="Chrome2 tests" finished-at="2023-05-20T02:37:14 EET" duration-ms="24014">
+      <class name="Tests.RegisterTests">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:Tests.RegisterTests@39655d3e]" started-at="2023-05-20T02:36:50 EET" name="launchApplication" finished-at="2023-05-20T02:37:04 EET" duration-ms="14539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="alreadyRegisteredEmail()[pri:0, instance:Tests.RegisterTests@39655d3e]" started-at="2023-05-20T02:37:04 EET" name="alreadyRegisteredEmail" finished-at="2023-05-20T02:37:13 EET" duration-ms="8781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alreadyRegisteredEmail -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Tests.RegisterTests@39655d3e]" started-at="2023-05-20T02:37:13 EET" name="CloseBrowser" finished-at="2023-05-20T02:37:14 EET" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Tests.RegisterTests -->
+    </test> <!-- Chrome2 tests -->
+    <test started-at="2023-05-20T02:36:50 EET" name="Chrome1 tests" finished-at="2023-05-20T02:37:18 EET" duration-ms="28545">
+      <class name="Tests.LoginTests">
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:Tests.LoginTests@7ae42ce3]" started-at="2023-05-20T02:36:50 EET" name="launchApplication" finished-at="2023-05-20T02:37:03 EET" duration-ms="13614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="TestValidLoggingIn()[pri:0, instance:Tests.LoginTests@7ae42ce3]" started-at="2023-05-20T02:37:03 EET" name="TestValidLoggingIn" finished-at="2023-05-20T02:37:08 EET" duration-ms="4627" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestValidLoggingIn -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Tests.LoginTests@7ae42ce3]" started-at="2023-05-20T02:37:08 EET" name="CloseBrowser" finished-at="2023-05-20T02:37:09 EET" duration-ms="518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+        <test-method is-config="true" signature="launchApplication(java.lang.String)[pri:0, instance:Tests.LoginTests@7ae42ce3]" started-at="2023-05-20T02:37:09 EET" name="launchApplication" finished-at="2023-05-20T02:37:15 EET" duration-ms="6303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="TestInValidLoggingIn()[pri:1, instance:Tests.LoginTests@7ae42ce3]" started-at="2023-05-20T02:37:15 EET" name="TestInValidLoggingIn" finished-at="2023-05-20T02:37:18 EET" duration-ms="2789" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestInValidLoggingIn -->
+        <test-method is-config="true" signature="CloseBrowser()[pri:0, instance:Tests.LoginTests@7ae42ce3]" started-at="2023-05-20T02:37:18 EET" name="CloseBrowser" finished-at="2023-05-20T02:37:18 EET" duration-ms="385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- Tests.LoginTests -->
+    </test> <!-- Chrome1 tests -->
+  </suite> <!-- Regression suite -->
+</testng-results>
