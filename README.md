@@ -17,9 +17,9 @@ ___
 * Make sure you have Docker Desktop
 * Pull the images of Selenium Grid (hub+nodes for the browsers) running these commands in your terminal
 ```console
-pull selenium/hub
-pull selenium/node-chrome  (Choose your browsers)
-pull selenium/node-chrome-debug
+docker pull selenium/hub
+docker pull selenium/node-chrome  (Choose your browsers)
+docker pull selenium/node-chrome-debug
 ```
 * Enter the browsers in the RegressionSuite.xml file
 ```xml
